@@ -1,18 +1,21 @@
-[project]
+[tool.poetry]
 name = "simple-airflow-automation"
 version = "0.1.0"
-description = "A simple Apache Airflow automation of scraping data from a website."
-authors = [
-    {name = "Antony Nyagah", email = "tony.m.nyagah@gmail.com"},
-]
-dependencies = [
-    "scrapy>=2.11.2",
-    "apache-airflow>=2.7.2",
-]
-requires-python = ">=3.10.0"
+description = "Automation of web scraping with Apache Airflow."
+authors = ["Antony Nyagah <tony.m.nyagah@gmail.com>"]
 readme = "README.md"
-license = {text = "MIT"}
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+apache-airflow = "^2.9.3"
+Scrapy = "^2.11.2"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.5.4"
+
+[tool.poetry.scripts]
 
 
-[tool.pdm]
-distribution = false
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
