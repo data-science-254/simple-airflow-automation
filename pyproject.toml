@@ -1,0 +1,17 @@
+[project]
+name = "simple-airflow-automation"
+version = "0.1.0"
+description = "A simple Apache Airflow automation of scraping data from a website."
+authors = [
+    {name = "Antony Nyagah", email = "tony.m.nyagah@gmail.com"},
+]
+dependencies = [
+    "scrapy>=2.11.2",
+]
+requires-python = ">=3.10.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
