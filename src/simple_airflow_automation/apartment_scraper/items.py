@@ -9,4 +9,8 @@ import scrapy
 class ApartmentScraperItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    location = scrapy.Field()
+    bedrooms = scrapy.Field()
+    bathrooms = scrapy.Field()
+    price = scrapy.Field()
+    site = scrapy.Field()
