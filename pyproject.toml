@@ -9,6 +9,7 @@ readme = "README.md"
 python = ">=3.10,<3.13"
 apache-airflow = "^2.9.3"
 Scrapy = "^2.11.2"
+python-dotenv = "^1.0.1"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.5.4"
